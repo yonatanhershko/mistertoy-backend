@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Doll",
+        "price": 220,
+        "_id": "WepLV",
+        "inStock": true,
+        "labels": [
+            "Box game",
+            "Art",
+            "Doll"
+        ],
+        "createdAt": 1720018221780
+    },
+    {
+        "name": "YoYo",
+        "price": 10,
+        "_id": "HepOV",
+        "inStock": true,
+        "labels": [
+            "Box game",
+            "Art",
+            "Doll"
+        ],
+        "createdAt": 1720018921780
+    },
+    {
+        "name": "LEGO Set",
+        "price": 120,
+        "_id": "WnhLV",
+        "inStock": true,
+        "labels": [
+            "Baby",
+            "Art"
+        ],
+        "createdAt": 1720018221710
+    }
+]
