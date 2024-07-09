@@ -11,8 +11,7 @@ export const toyService = {
     save
 }
 
-
-function query(filterBy = {}) {
+function query(filterBy = {}, sortBy = {}) {
     return Promise.resolve(toys)
         .then(toys => {
             if (filterBy.name) {
@@ -25,15 +24,15 @@ function query(filterBy = {}) {
 
             // if (filterBy.labels && filterBy.labels.length) {
             //     toys = toys.filter(toy =>
-            //         toy.labels.some((label) =>{ console.log('toy test',toy);
-            //             return filterBy.labels.includes(label)})
+            //         toy.labels.some(label => filterBy.labels.includes(label))
+            //     )
+            // }
 
-            //     ) 
-            // }
-            // if (filterBy.sortBy) {
-            //     const sortDir = filterBy.sortDir === 'desc' ? -1 : 1
-            //     toys = sortToys(toys, filterBy.sortBy, sortDir)
-            // }
+            if (sortBy.field) {
+                const sortDir = sortBy.dir
+                toys = sortToys(toys, sortBy.field, sortDir)
+                console.log('Sorting by:', sortBy.field)
+            }
 
             // if (filterBy.pageIdx !== undefined) {
             //     const startIdx = filterBy.pageIdx * PAGE_SIZE
@@ -42,6 +41,19 @@ function query(filterBy = {}) {
 
             return toys
         })
+}
+
+function sortToys(toys, field, dir) {
+    if (field === 'name') {
+        return toys.sort((c1, c2) => c1.name.localeCompare(c2.name) * dir);
+    } else if (field === 'price') {
+        return toys.sort((c1, c2) => (c1.price - c2.price) * dir);
+    } else if (field === 'createdAt') {
+        return toys.sort((c1, c2) => (c1.createdAt - c2.createdAt) * dir);
+    } else if (field === 'inStock') {
+        return toys.sort((c1, c2) => (c1.inStock === c2.inStock ? 0 : c1.inStock ? -dir : dir));
+    }
+    return toys;
 }
 
 function getById(toyId) {

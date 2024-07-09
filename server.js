@@ -1,7 +1,7 @@
-import path from 'path';
+import path from 'path'
 import express from 'express'
 import cookieParser from 'cookie-parser'
-// import cors from 'cors'
+import cors from 'cors'
 
 import { toyService } from './services/toy.service.js'
 import { userService } from './services/user.service.js'
@@ -9,16 +9,16 @@ import { loggerService } from './services/logger.service.js'
 
 const app = express()
 
-// const corsOptions = {
-//     origin: [
-//         'http://127.0.0.1:3000',
-//         'http://localhost:3000',
-//         'http://127.0.0.1:5173',
-//         'http://localhost:5173',
-//     ],
-//     credentials: true
-// }
-// app.use(cors(corsOptions))
+const corsOptions = {
+    origin: [
+        'http://127.0.0.1:3000',
+        'http://localhost:3000',
+        'http://127.0.0.1:5173',
+        'http://localhost:5173',
+    ],
+    credentials: true
+}
+app.use(cors(corsOptions))
 
 
 // Express Config:
@@ -31,14 +31,21 @@ app.use(express.json())
 // toy LIST
 app.get('/api/toy', (req, res) => {
     console.log('get list')
+
     const filterBy = {
-        txt: req.query.txt || '',
-        price: +req.query.price || 0,
-        // sortBy: req.query.sortBy,
-        // sortDir: req.query.sortDir === 'desc' ? -1 : 1,
+        name: req.query.name || '',
+        price: +req.query.price || 0
     }
-    console.log(filterBy)
-    toyService.query(filterBy)
+
+    const sortBy = {
+        field: req.query.sortBy || 'name',
+        dir: req.query.sortDir === 'desc' ? -1 : 1
+    }
+
+    console.log('filterBy:', filterBy)
+    console.log('sortBy:', sortBy)
+
+    toyService.query(filterBy, sortBy)
         .then((toys) => {
             res.send(toys)
         })
@@ -47,7 +54,6 @@ app.get('/api/toy', (req, res) => {
             res.status(400).send('Cannot get toys')
         })
 })
-
 // toy find
 app.get('/api/toy/:toyId', (req, res) => {
     const { toyId } = req.params

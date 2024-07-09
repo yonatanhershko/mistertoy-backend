@@ -1,37 +1,98 @@
 [
     {
-        "name": "Doll",
-        "price": 220,
-        "_id": "WepLV",
-        "inStock": true,
-        "labels": [
-            "Box game",
-            "Art",
-            "Doll"
-        ],
-        "createdAt": 1720018221780
+      "_id": "46iOKd",
+      "name": "Teddy Bear🧸",
+      "price": "164",
+      "inStock": true,
+      "labels": [
+        "Outdoor",
+        "Baby",
+        "Battery Powered"
+      ],
+      "createdAt": 1720530085888
     },
     {
-        "name": "YoYo",
-        "price": 10,
-        "_id": "HepOV",
-        "inStock": true,
-        "labels": [
-            "Box game",
-            "Art",
-            "Doll"
-        ],
-        "createdAt": 1720018921780
+      "_id": "TxLapG",
+      "name": "LEGO Set",
+      "price": "183",
+      "inStock": true,
+      "labels": [
+        "Outdoor",
+        "Baby",
+        "Doll"
+      ],
+      "createdAt": 1720531584696
     },
     {
-        "name": "LEGO Set",
-        "price": 120,
-        "_id": "WnhLV",
-        "inStock": true,
-        "labels": [
-            "Baby",
-            "Art"
-        ],
-        "createdAt": 1720018221710
+      "_id": "YaS0QF",
+      "name": "Toy Train🚂",
+      "price": "21",
+      "inStock": true,
+      "labels": [
+        "Outdoor",
+        "Baby",
+        "Battery Powered"
+      ],
+      "createdAt": 1720530017546
+    },
+    {
+      "_id": "wSlLcx",
+      "name": "Yo-Yo🪀",
+      "price": "87",
+      "inStock": true,
+      "labels": [
+        "Outdoor",
+        "Baby",
+        "On wheels"
+      ],
+      "createdAt": 1720530652382
+    },
+    {
+      "_id": "6pOeSS",
+      "name": "Kite🪁",
+      "price": "21",
+      "inStock": false,
+      "labels": [
+        "Battery Powered",
+        "Puzzle",
+        "On wheels"
+      ],
+      "createdAt": 1720537952136
+    },
+    {
+      "_id": "QQS7mX",
+      "name": "Dollhouset",
+      "price": "28",
+      "inStock": true,
+      "labels": [
+        "Battery Powered",
+        "Box game",
+        "Puzzle"
+      ],
+      "createdAt": 1720535721907
+    },
+    {
+      "_id": "DzSwnx",
+      "name": "Play-Doh",
+      "price": "43",
+      "inStock": false,
+      "labels": [
+        "Battery Powered",
+        "Box game",
+        "Outdoor"
+      ],
+      "createdAt": 1720531016450
+    },
+    {
+      "_id": "V80Frz",
+      "name": "Action Figure",
+      "price": "58",
+      "inStock": true,
+      "labels": [
+        "Battery Powered",
+        "Doll",
+        "Box game"
+      ],
+      "createdAt": 1720538241561
     }
-]
+  ]
