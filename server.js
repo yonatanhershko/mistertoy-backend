@@ -34,7 +34,8 @@ app.get('/api/toy', (req, res) => {
 
     const filterBy = {
         name: req.query.name || '',
-        price: +req.query.price || 0
+        price: +req.query.price || 0,
+        labels: req.query.labels || ''
     }
 
     const sortBy = {

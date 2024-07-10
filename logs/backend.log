@@ -716,3 +716,10 @@
 9.7.2024, 22:33:12 - INFO - Server listening on port http://127.0.0.1:3030/
 9.7.2024, 22:34:28 - INFO - Server listening on port http://127.0.0.1:3030/
 9.7.2024, 23:15:01 - INFO - toy 87mbH removed
+10.7.2024, 8:31:52 - INFO - Server listening on port http://127.0.0.1:3030/
+10.7.2024, 12:57:40 - INFO - Server listening on port http://127.0.0.1:3030/
+10.7.2024, 13:00:31 - INFO - Server listening on port http://127.0.0.1:3030/
+10.7.2024, 13:00:34 - ERROR - Cannot get toys | ReferenceError: filteredToys is not defined
+10.7.2024, 13:00:34 - ERROR - Cannot get toys | ReferenceError: filteredToys is not defined
+10.7.2024, 13:00:42 - ERROR - Cannot get toys | ReferenceError: filteredToys is not defined
+10.7.2024, 13:01:25 - INFO - Server listening on port http://127.0.0.1:3030/

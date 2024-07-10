@@ -21,7 +21,12 @@ function query(filterBy = {}, sortBy = {}) {
             if (filterBy.price) {
                 toys = toys.filter(toy => toy.price <= filterBy.price)
             }
-
+            if (filterBy.labels && filterBy.labels.length) {
+                toys = toys.filter(toy =>
+                  filterBy.labels.every(label => toy.labels.includes(label))
+                  // filterBy.labels.some(label => toy.labels.includes(label))
+                )
+              }
             // if (filterBy.labels && filterBy.labels.length) {
             //     toys = toys.filter(toy =>
             //         toy.labels.some(label => filterBy.labels.includes(label))
