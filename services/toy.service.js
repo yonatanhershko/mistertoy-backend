@@ -27,12 +27,7 @@ function query(filterBy = {}, sortBy = {}) {
                   // filterBy.labels.some(label => toy.labels.includes(label))
                 )
               }
-            // if (filterBy.labels && filterBy.labels.length) {
-            //     toys = toys.filter(toy =>
-            //         toy.labels.some(label => filterBy.labels.includes(label))
-            //     )
-            // }
-
+        
             if (sortBy.field) {
                 const sortDir = sortBy.dir
                 toys = sortToys(toys, sortBy.field, sortDir)
@@ -90,6 +85,8 @@ function save(toy) {
         //     _id: loggedinUser._id,
         //     isAdmin: loggedinUser.isAdmin
         // }
+        toy.inStock = true
+
         toys.push(toy)
     }
 
