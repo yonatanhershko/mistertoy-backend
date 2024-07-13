@@ -9,7 +9,8 @@
             "Baby",
             "On wheels"
         ],
-        "createdAt": 1720530652382
+        "createdAt": 1720530652382,
+        "bgColor": "white"
     },
     {
         "name": "tt",
@@ -19,7 +20,19 @@
             "Puzzle"
         ],
         "createdAt": 1720601429917,
-        "_id": "CNadZ"
+        "_id": "CNadZ",
+        "bgColor": "#f6e2dd"
+    },
+    {
+        "name": "try",
+        "price": 546,
+        "labels": [
+            "Outdoor",
+            "On wheels"
+        ],
+        "createdAt": 1720695921925,
+        "_id": "xh03j",
+        "bgColor": "#f39f76"
     },
     {
         "_id": "YaS0QF",
@@ -31,7 +44,8 @@
             "Baby",
             "Battery Powered"
         ],
-        "createdAt": 1720530017546
+        "createdAt": 1720530017546,
+        "bgColor": "#fff8b8"
     },
     {
         "_id": "46iOKd",
@@ -43,7 +57,19 @@
             "Baby",
             "Battery Powered"
         ],
-        "createdAt": 1720530085888
+        "createdAt": 1720530085888,
+        "bgColor": "#e2f6d3"
+    },
+    {
+        "name": "sfd",
+        "price": 324,
+        "labels": [
+            "Puzzle",
+            "Battery Powered"
+        ],
+        "createdAt": 1720852775983,
+        "_id": "SmOpw",
+        "bgColor": "#fff8b8"
     },
     {
         "_id": "DzSwnx",
@@ -55,7 +81,8 @@
             "Box game",
             "Outdoor"
         ],
-        "createdAt": 1720531016450
+        "createdAt": 1720531016450,
+        "bgColor": "#d3bfdb"
     },
     {
         "_id": "6pOeSS",
@@ -67,7 +94,8 @@
             "Puzzle",
             "On wheels"
         ],
-        "createdAt": 1720537952136
+        "createdAt": 1720537952136,
+        "bgColor": "#aeccdc"
     },
     {
         "_id": "QQS7mX",
@@ -79,7 +107,8 @@
             "Box game",
             "Puzzle"
         ],
-        "createdAt": 1720535721907
+        "createdAt": 1720535721907,
+        "bgColor": "white"
     },
     {
         "_id": "V80Frz",
@@ -91,23 +120,26 @@
             "Doll",
             "Box game"
         ],
-        "createdAt": 1720538241561
+        "createdAt": 1720538241561,
+        "bgColor": "#f6e2dd"
     },
     {
         "name": "aa",
         "price": 44,
         "labels": [],
         "createdAt": 1720542823868,
-        "_id": "ycMFr"
+        "_id": "ycMFr",
+        "bgColor": "#f39f76"
     },
     {
-        "name": "try",
-        "price": 546,
+        "name": "yu",
+        "price": 56,
         "labels": [
-            "Outdoor",
-            "On wheels"
+            "Doll",
+            "Baby"
         ],
-        "createdAt": 1720695921925,
-        "_id": "xh03j"
+        "createdAt": 1720852481656,
+        "bgColor": "#d3bfdb",
+        "_id": "2znpJ"
     }
 ]

@@ -43,8 +43,8 @@ app.get('/api/toy', (req, res) => {
         dir: req.query.sortDir === 'desc' ? -1 : 1
     }
 
-    console.log('filterBy:', filterBy)
-    console.log('sortBy:', sortBy)
+    // console.log('filterBy:', filterBy)
+    // console.log('sortBy:', sortBy)
 
     toyService.query(filterBy, sortBy)
         .then((toys) => {
@@ -76,7 +76,8 @@ app.post('/api/toy', (req, res) => {
         name: req.body.name,
         price: +req.body.price,
         labels: req.body.labels || [],
-        createdAt: req.body.createdAt ? +req.body.createdAt : Date.now()
+        createdAt: req.body.createdAt ? +req.body.createdAt : Date.now(),
+        bgColor : req.body.bgColor || 'white'
     }
     toyService.save(toy)//loggedinUser
         .then((savedToy) => {
@@ -98,7 +99,8 @@ app.put('/api/toy', (req, res) => {
         name: req.body.name,
         price: +req.body.price,
         labels: req.body.labels || [],
-        createdAt: req.body.createdAt ? +req.body.createdAt : Date.now()
+        createdAt: req.body.createdAt ? +req.body.createdAt : Date.now(),
+        bgColor : req.body.bgColor || 'white'
     }
     toyService.save(toy)//loggedinUser
         .then((savedToy) => {
